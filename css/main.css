@@ -1,0 +1,76 @@
+@font-face {
+    font-family: DIN Pro;
+    src: url(https://www.fontmirror.com/app_public/files/t/1/DINPro-Black_f50879d6be98e7648d423f7cbfb53cc7.otf);
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DIN Pro;
+    color: #171717;
+}
+
+
+ul{
+    margin: auto;
+    text-align: center;
+    word-spacing: 1em;
+    font-size: 1.2em;
+    
+}
+
+li{
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+li a {
+    text-decoration: none;
+}
+
+h2{
+    margin: auto;
+    font-size: 4.5em;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.header{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.main_class{
+    width: 100%;
+    height: 100vh;
+    background-color: #D2B954;
+    border-radius: 205px 205px 0 0 ;
+}
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #171717;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #070707;
+  }
