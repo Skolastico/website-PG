@@ -7,12 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Bem Vindo</title>
 </head>
 <body>
   <header class="v-header container">
     <div class="fullscreen-video-wrap">
-      <video src="./video/pantera.mp4" type="video/mp4" autoplay loop></video>
+      <video loop autoplay muted id="vid">
+        <source type="video/mp4" src="./video/pantera.mp4"></source>
+      </video>
     </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
@@ -22,9 +27,12 @@
         <div class="icons">
           <a href=""><ion-icon name="logo-twitter" id="twitter"></ion-icon></a>
           <a href=""><ion-icon name="logo-facebook" id="facebook"></ion-icon></a>
-          <a href=""><ion-icon name="logo-instagram" id="instagram"></ion-icon></a>
+          <a href="https://www.youtube.com/watch?v=KXw8CRapg7k" target="_blank"><ion-icon name="logo-youtube" id="youtube"></ion-icon></a>
         </div>
       </div>
   </header>
+  <script>
+    document.getElementById('vid').play();
+</script>
 </body>
 </html>

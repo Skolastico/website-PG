@@ -1,7 +1,3 @@
-@font-face {
-    font-family: DIN Pro;
-    src: url(https://www.fontmirror.com/app_public/files/t/1/DINPro-Black_f50879d6be98e7648d423f7cbfb53cc7.otf);
-  }
 
   html {
     scroll-behavior: smooth;
@@ -10,7 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: DIN Pro;
+    font-family: 'Roboto', sans-serif;
     color: #171717;
 }
 
@@ -69,7 +65,7 @@ li{
 
 li a {
     text-decoration: none;
-    font-family: "DIN Pro Medium";
+    font-family: "Roboto Medium";
 }
 
 h2{
@@ -133,7 +129,7 @@ h2{
 }
 
 .textslide p{
-  font-family: "DIN Pro Medium";
+  font-family: "Roboto Light";
   font-size: 1.5em;
   
 }
@@ -155,7 +151,7 @@ h2{
 }
 
 .textslide h3 span{
-  font-family: "DIN Pro light";
+  font-family: "Roboto light";
 }
 
 .content2::before{
@@ -215,7 +211,7 @@ h2{
 
 
 .btn{
-  font-family: "DIN Pro Medium";
+  font-family: "Roboto Medium";
   background: #34b3a000;
   color:#171717;
   font-size:1.4em;
@@ -252,7 +248,7 @@ h2{
 }
 
 
-.section-bears {  
+.section-jaguar{  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -283,7 +279,7 @@ h2{
     opacity: .3;
 }
 
-.bear_photo {
+.jaguar_photo {
   position: relative;
     width: 100%;
     margin: 0;
@@ -291,14 +287,14 @@ h2{
     background: #D2B954;
 }
 
-.bear_photo img{
+.jaguar_photo img{
     width: 100%;
     height: auto;
     transform: scale(1.8);
     cursor: pointer;
     object-fit: cover;
 }
-.bear_photo img:hover{
+.jaguar_photo img:hover{
   transform: scale(1.6);
 }
 
@@ -315,7 +311,7 @@ h2{
   transition: opacity .2s, visibility .2s;
 }
 
-.bear_photo:hover .img__description {
+.jaguar_photo:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
@@ -506,6 +502,7 @@ textarea:focus, input:focus {
 
 .footer-distributed .footer-right{
 	width: 20%;
+  text-align: center;
 }
 
 .footer-distributed .footer-company-about{
@@ -638,13 +635,17 @@ ion-icon {
     .curiosities h2{
       text-align: center;
     }
-    .section-bears{
+    .section-jaguar{
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1, 1fr);
     }
-    .bear_photo:hover .img__description {
+    .jaguar_photo:hover .img__description {
       visibility: hidden;
       opacity: 1;
     }
   
+  }
+
+  .title{
+    margin-bottom: 100px;
   }
