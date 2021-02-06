@@ -3,6 +3,7 @@
 Website para Cadeira de Programação
 
 To do:
+  - FIX THE FONT!!!!!!!
   - Put all of the info.
 
 Bugs:
