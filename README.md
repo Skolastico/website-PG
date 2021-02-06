@@ -3,7 +3,7 @@
 Website para Cadeira de Programação
 
 To do:
-  Put all of the info.
+  - Put all of the info.
 
 Bugs:
  - Index 
