@@ -7,6 +7,6 @@ To do:
 
 Bugs:
  - Index 
-   .Video not loading properly 
+   - Video not loading properly 
  - Main:
-   .News_Hover Not working properly
+   - News_Hover Not working properly
