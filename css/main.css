@@ -3,6 +3,9 @@
     src: url(https://www.fontmirror.com/app_public/files/t/1/DINPro-Black_f50879d6be98e7648d423f7cbfb53cc7.otf);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
 
 *{
     margin: 0;
@@ -11,6 +14,42 @@
     color: #171717;
 }
 
+#button {
+  display: inline-block;
+  background-color: #171717;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 ul{
     margin: auto;
@@ -51,9 +90,10 @@ h2{
 }
 
 #main_content{
-  margin: auto;
-  height: 100vh;
-  background-color: #D2B954;
+  background-color: #D2B954 ;
+  background-repeat:repeat;
+  background-attachment: scroll;
+  position:absolute;
   border-radius: 220px 220px 0 0 ;
 }
 
@@ -61,6 +101,7 @@ h2{
   width: 80%;
   margin: auto;
   padding-top: 150px;
+  margin-bottom: 200px;
 }
 
 
@@ -70,24 +111,106 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .image_slide{
-  content:url(/img/Slide-1.png);
+  content:url(../img/Slide-1.png);
   width: 40%
 }
 
-
+.text_detais{
+  margin-left: 25px;
+}
 .textslide{
-  width: 35%;
+  width: 45%;
   padding-left: 200px;
 }
 
+.textslide h1{
+  margin-bottom: 35px;
+  font-size: 4em;
+}
 
 .textslide p{
   font-family: "DIN Pro Medium";
-  font-size: 1.875em;
+  font-size: 1.5em;
   
+}
+
+.textslide h3{
+  line-height: 36px;
+}
+
+.curiosities{
+  width: 76%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.curiosities h2{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.textslide h3 span{
+  font-family: "DIN Pro light";
+}
+
+.content2::before{
+    content: "\a";
+    white-space: pre;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+#stage {
+  margin: 1em auto;
+  width: 382px;
+  height: 292px;
+}
+#stage a {
+  position: absolute;
+}
+#stage a img {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+#stage a:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+#stage a:nth-of-type(2) {
+  z-index: 10;
+}
+#stage a:nth-of-type(n+3) {
+  display: none;
+}
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
 }
 
 
@@ -100,7 +223,7 @@ h2{
   border-radius: 100px;
   border: 5px solid  #171717;
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 50px;
 
 }
 
@@ -118,31 +241,323 @@ h2{
   border: 5px solid  #353535;
 }
 
+.image_slide_char{
+  width: 100%;
+  text-align: center;
+}
+
+
+.image_slide_char img{
+  width: 70%;
+}
+
+
+.section-bears {  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0;
+}
+
+#div1 { grid-area: 1 / 1 / 2 / 2; }
+#div2 { grid-area: 1 / 2 / 2 / 3; }
+#div3 { grid-area: 1 / 3 / 2 / 4; }
+#div4 { grid-area: 1 / 4 / 2 / 5; }
+#div5 { grid-area: 2 / 1 / 3 / 2; }
+#div6 { grid-area: 2 / 2 / 3 / 3; }
+#div7 { grid-area: 2 / 3 / 3 / 4; }
+#div8 { grid-area: 2 / 4 / 3 / 5; }
+
+.object-fit_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: -3px;
+  transition: .8s; 
+  opacity: 1;
+}
+
+.object-fit_cover:hover {
+    opacity: .3;
+}
+
+.bear_photo {
+  position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #D2B954;
+}
+
+.bear_photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.8);
+    cursor: pointer;
+    object-fit: cover;
+}
+.bear_photo img:hover{
+  transform: scale(1.6);
+}
+
+.img__description {
+  position: absolute;
+  bottom: 8px;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  width: 95%;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.bear_photo:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.adopt{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.adopt img{
+  width: 35%;
+  transition: transform .5s cubic-bezier(.63,.11,.4,.88);
+}
+
+.adopt img:hover{
+  transform: rotate(-15deg) scale(.8);
+  
+}
+
+input{
+  margin-bottom: 100px;
+}
+
+
+input[type=text],input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 0px solid #ccc; /* Gray border */
+  background-color: #171717;
+  border-radius: 2vh; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #171717;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color .5s;
+  font-size: .9em;
+}
+
+input[type=submit]:hover {
+  background-color: #353535;
+  text-emphasis: center;
+}
+
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+input, select, textarea{
+  color: white;
+}
+
+textarea:focus, input:focus {
+  color: white;
+}
+
+::selection {
+  color: #D2B954;
+  background: #171717;
+}
+
+
+.botao{
+  text-align: center;
+}
+
+.footer-distributed{
+	background: #171717;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 42px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h1{
+	color:  #D2B954;
+  margin: 0;
+  font-size: 3em;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+  color:  inherit;
+  padding-right: 15px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 30px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: #D2B954;
+	text-decoration: none;;
+}
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
 
 
 
+ion-icon {
+  color: #D2B954;
+  z-index: 1;
+  transition: color .3s ease-in-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#facebook:hover,#twitter:hover,#instagram:hover {
+  background-color: #00733b00;
+  color:#353535;
+}
 
 /* Scrollbar */
 
@@ -161,4 +576,75 @@ h2{
   
   ::-webkit-scrollbar-thumb:hover {
     background: #070707;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .image_slide{
+      margin: auto;
+    }
+    .textslide{
+      width: 60%;
+      margin: auto;
+      padding-left: 0;
+      text-align: center;
+    }
+    
+
+    .textslide h1{
+      font-size: 3em
+    }
+
+
+    .textslide p{
+      text-align: center;
+      
+    }
+  
+    .textslide a{
+      width: 70%;
+      text-align: center;
+    }
+  
+    .slide{
+      width: 90%;
+      margin: auto;
+      display: initial;
+    }
+
+    .text_detais{
+      margin-left: 0;
+    }
+    .image_slide_char{
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+    .curiosities{
+      text-align: center;
+    }
+    .curiosities h2{
+      text-align: center;
+    }
+    .section-bears{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+    .bear_photo:hover .img__description {
+      visibility: hidden;
+      opacity: 1;
+    }
+  
   }

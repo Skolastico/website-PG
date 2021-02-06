@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://github.com/necolas/normalize.css/blob/master/normalize.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
-    <script src="./js/slideshow.js"></script>
-    <title>Main Paige</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Main Page</title>
 </head>
 <body>
     <div class="header">
         <h2 class="h_mainpage">ONÇA</h2>
         <ul>
-            <li><a href="">home</a> </li>
-            <li><a href="">about</a></li>
-            <li><a href="">news</a></li>
-            <li><a href="">faq</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="#">home</a> </li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#pics">Noticias</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </div>
+    <a id="button"></a>
     <div id="main_content">
         <div id="main_info">
             <div id="slideshow">
@@ -29,16 +26,202 @@
                     <div class="image_slide">
                     </div>
                     <div class="textslide">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra risus ut nunc feugiat, ut vehicula elitultrices. Curabitur malesuada mi magna, faucibus tristique nisl blandit eget.</p> 
-                        <a class="btn btn-full" href="./main.html">SABER MAIS</a>
+                        <p>Sabe Mais sobre a Onça e o que se está a fazer para combater a sua extinção.</p> 
+                        <a class="btn btn-full" href="#about">SABER MAIS</a>
                     </div>
                 </div>
-                <div class="slidetext">
-                    
-                </div>
+            </div>
+            <div class="aboutzone">
             </div>
         </div>
-    </div>
+        <div class="slide" id="about">
+            <div class="textslide" >
+                <h1>Caracteristicas</h1>
+                <div class="text_detais">
+                    <h3 class="content1">Nome Cientifico: <span class="content2">Panthera onca</span></h3>
+                    <h3 class="content1">Peso: <span class="content2">Até 135kgs</span></h3>
+                    <h3 class="content1">Classe de Especie: <span class="content2">Carnivoro</span></h3>
+                    <h3 class="content1">Localização : <span class="content2">América do Sul</span></h3>
+                    <h3 class="content1">Tamanho: <span class="content2">Maximo de 2m de Comprimento e 100cm de altura</span></h3>
+                    <h3 class="content1">Corpo: <span class="content2">Pelagem amarelo-dourado com pintas pretas na cabeça, pescoço e patas</span></h3>
+                    <h3 class="content1">Expectativa de Vida : <span class="content2">12 Anos (Habitat Natura) / 30 Anos (Cativeiro)</span></h3>
+                </div>
+            </div>
+            <div class="image_slide_char">
+                <img src="https://svgsilh.com/svg_v2/157733.svg" alt="">
+            </div>
+        </div>
+        <div class="curiosities">
+            <h2>PLANO DE CONSERVAÇÃO</h2>
+            <p>Com o objetivo de garantir a recuperação da onça-pintada, foi criada a Estratégia de Conservação da
+                Onça-Pintada 2020-2030, um programa que contempla 15 paisagens prioritárias, em 14 dos 18
+                países onde o felino ainda vive. Coordenada pela Rede WWF em parceria com outras organizações,
+                a estratégia irá promover atividades econômicas sustentáveis, como agrofloresta e restauração
+                florestal comunitária, em benefício das populações humanas que coexistem com o felino.</p>
+        </div>
+        <section class="section-bears " id="pics">
+            <div class="bear_photo" id="div1">
+                <a href="https://www.pornhub.com/view_video.php?viewkey=ph5e777e0a7e446&t=180">
+                    <img class="object-fit_cover" src="https://ogimg.infoglobo.com.br/in/24856220-22d-862/FT1086A/652/x1611663662044_Onca-Joujou_-Foto-Saul-Schramm.jpg.pagespeed.ic.RuUWI3nyDm.jpg" alt="Rhoncus#1">
+                    <div class="img__description">
+                        <h3>RESGATADA DE QUEIMADA, ONÇA VOLTA A SER SOLTA NO PANTANAL E CAÇA CAPIVARA</h3>
+                        <p>Monitoramento com coleira especial também revela que animal atravessou o Rio Paraguai a nado; felino estava com pneumonia por aspirar fumaça e com as patas feridas pelo fogo quando foi salvo por brigadistas...</p>
+                    </div>
+                </a>
+                <div id="myModal" class="modal">
+                </div>
+            </div>
+            <div class="bear_photo" id="div2">
+                <a href="https://www.rtp.pt/noticias/mundo/nicaragua-crias-de-jaguar-resgatadas-das-maos-de-traficantes_n1293257">
+                    <img class="object-fit_cover" src="https://cdn-images.rtp.pt/icm/noticias/images/46/46e25592200b019d70195bde027fb0e1?w=860&sx=0&sy=0&sw=1152&sh=822&q=75" alt="Rhoncus#2">
+                    <div class="img__description">
+                        <h3>Nicarágua. Crias de jaguar resgatadas das mãos de traficantes</h3>
+                        <p>A publicação nas redes sociais da venda de dois jovens jaguares alertou Eduardo Sacasa do Zoo Nacional de Masaya. Os caçadores já tinham matado a mãe jaguar quando foram descobertos...</p>
+                    </div>
+                </a>
+            </div>    
+            <div class="bear_photo" id="div3">
+                <a href="https://www.bbc.com/portuguese/brasil-54213943">
+                    <img class="object-fit_cover" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/0473/production/_114493110_pantanal5.jpg" alt="Rhoncus#3">
+                    <div class="img__description">
+                        <h3>As histórias por trás de 3 fotos dos incêndios no Pantanal que viralizaram</h3>
+                        <p>Os incêndios que atingem o Pantanal têm repercutido em todo o mundo. O pior período de queimadas das últimas décadas do bioma causa preocupação. Nas redes sociais, o assunto tem sido compartilhado inúmeras vezes...</p>
+                    </div>
+                </a>
+            </div>    
+            <div class="bear_photo" id="div4">
+                <a href="https://www.youtube.com/watch?v=C1ap61GOiVg">
+                    <img class="object-fit_cover" src="https://images.pexels.com/photos/34700/bear-animals-zoo-captivity.jpg?auto=compress&cs=tinysrgb& dpr=2&h=750&w=1260" alt="Rhoncus#4">
+                    <div class="img__description">
+                        <h3>ONÇA CARLHO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis dicta cum nobis veritatis   obcaecati repellat ipsum culpa, qui possimus excepturi quia illum, consequatur tenetur quidem inventore est accusantium perspiciatis.</p>
+                    </div>
+                </a>
+            </div>    
+            <div class="bear_photo" id="div5">
+                <a href="https://www.youtube.com/watch?v=C1ap61GOiVg">
+                    <img class="object-fit_cover" src="https://cdn-images.rtp.pt/icm/noticias/images/46/46e25592200b019d70195bde027fb0e1?w=860&sx=0&sy=0&sw=1152&sh=822&q=75" alt="Rhoncus#5">
+                    <div class="img__description">
+                        <h3>ONÇA CARLHO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis dicta cum nobis veritatis   obcaecati repellat ipsum culpa, qui possimus excepturi quia illum, consequatur tenetur quidem inventore est accusantium perspiciatis.</p>
+                    </div>
+                </a>
+            </div>  
+            <div class="bear_photo" id="div6">
+                <a href="https://www.youtube.com/watch?v=C1ap61GOiVg">
+                    <img class="object-fit_cover" src="https://images.pexels.com/photos/63325/grizzly-bears-playing-sparring-63325.jpeg?auto=compress&  cs=tinysrgb&dpr=3&h=750&w=1260" alt="Rhoncus#6">
+                    <div class="img__description">
+                        <h3>ONÇA CARLHO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis dicta cum nobis veritatis   obcaecati repellat ipsum culpa, qui possimus excepturi quia illum, consequatur tenetur quidem inventore est accusantium perspiciatis.</p>
+                    </div>
+                </a>
+            </div>  
+            <div class="bear_photo" id="div7">
+                <a href="https://www.youtube.com/watch?v=C1ap61GOiVg">
+                    <img class="object-fit_cover" src="https://images.pexels.com/photos/140097/pexels-photo-140097.jpeg?auto=compress&cs=tinysrgb&dpr=2&    h=750&w=1260" alt="Rhoncus#7">
+                    <div class="img__description">
+                        <h3>ONÇA CARLHO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis dicta cum nobis veritatis   obcaecati repellat ipsum culpa, qui possimus excepturi quia illum, consequatur tenetur quidem inventore est accusantium perspiciatis.</p>
+                    </div>
+                
+            </div>  
+            <div class="bear_photo" id="div8">
+                <a href="https://www.youtube.com/watch?v=C1ap61GOiVg">
+                    <img class="object-fit_cover" src="https://images.pexels.com/photos/53425/polar-bear-arctic-wildlife-snow-53425.jpeg?auto=compress& cs=tinysrgb&dpr=3&h=750&w=1260" alt="Rhoncus#8">
+                    <div class="img__description">
+                        <h3>ONÇA CARLHO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, reiciendis dicta cum nobis veritatis   obcaecati repellat ipsum culpa, qui possimus excepturi quia illum, consequatur tenetur quidem inventore est accusantium perspiciatis.</p>
+                    </div>
+                </a>
+            </div> 
+        </section>
+        <div class="adopt">
+            <a href="https://gifts.worldwildlife.org/gift-center/gifts/species-adoptions/jaguar.aspx"><img src="./img//adopt-jaguar.png" alt="Adopt a Jaguar"></a> 
+        </div>
+        <div class="container" id="contact">
+            <form action="action_page.php">
+          
+              <input type="text" id="fname" name="firstname" placeholder="O Seu Nome..">
+          
+              <input type="text" id="lname" name="lastname" placeholder="O Seu Sobrenome..">
+          
 
+              <input type="email" id="lname" name="lastname" placeholder="O Seu Email..">
+              <textarea id="subject" name="subject" placeholder="Diga-nos algo..." style="height:200px"></textarea>
+              <div class="botao">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+        </div>
+        <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h1>ONÇA</h1>
+
+				<p class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#pics">Noticias</a>
+                    <a href="#contact">Contacto</a>
+				</p>
+
+				<p class="footer-company-name">PGD © 2021</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:sanchescosta.samuel@gmail.com">sanchescosta.samuel@gmail.com</a></p>
+                </div>
+                <div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:hugomnr04@gmail.com">hugomnr04@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+                    <a href=""><ion-icon name="logo-twitter" id="twitter"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-facebook" id="facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-instagram" id="instagram"></ion-icon></a>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- script para as animações -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- localização de ficheiros de jQuery -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
+    <script src="/outros/js/jquery.waypoints.min.js"></script>
+    <!-- localização do ficheiro de JavaScript -->
+    <script src="/js/script.js"></script>
+    <script>
+        var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+    </script>
 </body>
 </html>
