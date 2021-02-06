@@ -3,10 +3,10 @@
 Website para Cadeira de Programação
 
 To do:
-  - Finish main page
-  - Responsive Website
-  - Javascript implementation
+  Put all of the info.
 
 Bugs:
  - Index 
    .Video not loading properly 
+ - Main:
+   .News_Hover Not working properly
